@@ -25,6 +25,9 @@ Mediante al combinación de Nivel y tamaño aumentamos el nivel de dificultad.
   - Puntuación por nivel: A mayor nivel, mayor recompensa.
   - Puntuación por tamaño: A mayor tamaño, mayor puntuación.
 
-
-
 ![cap2](https://user-images.githubusercontent.com/62303274/141761512-da2109c2-d2ff-44f0-86ce-747796bac360.png)
+
+### Validación CSS:
+Se ha validado el archivo css para comprovar que cumple la norma, en W3C.
+
+![cap3](https://user-images.githubusercontent.com/62303274/141768535-25304f4f-2780-4523-91ca-11aa6941797c.png)
