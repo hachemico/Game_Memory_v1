@@ -1,4 +1,4 @@
-
+/* Configuracion grid body */
 body{
     display: grid;
     grid-template-columns: 15% 85%;
@@ -10,7 +10,7 @@ body{
     "menu menu"
     "footer footer";
 }
-
+/* Configuracion grid area title */
 #title{
     border: 1px solid black;
     grid-area: title;
@@ -20,12 +20,14 @@ body{
     background-color: cadetblue;
   
 }
-
+/* Configuracion grid area marcadores */
 #scoreMarkers{
     border: 1px solid black;
     grid-area: scoreMarkers;
     background-color: rgb(79, 129, 131);
 }
+
+/* Configuracion grid area menu */
 #menu{
     border: 1px solid black;
     grid-area: menu;
@@ -37,6 +39,7 @@ body{
     
 }
 
+/* Configuracion grid area footer */
 #footer{
     border: 1px solid black;
     grid-area: footer;
@@ -47,6 +50,7 @@ body{
   
 }
 
+/* Configuracion grid area main + añadir nuevo grid */
 #main{
     border: 1px solid black;
     grid-area: main;
@@ -59,9 +63,10 @@ body{
     grid-template-areas: 
     "msg"
     "mainGame";
-    /* "controls"; */
+    
 }
 
+/* Configuracion grid area mensajes */
 #message{
     border: 1px solid black;
     grid-area: msg;
@@ -71,8 +76,8 @@ body{
 
 }
 
+/* Configuracion grid area mainGame + nueva areaGrid */
 #mainGame{
-    /* border: 1px solid black; */
     border-top: 1px solid black; ;
     border-left:  1px solid black;
     border-right:  1px solid black;
@@ -85,6 +90,7 @@ body{
     background-image: url(assets/tapete.jpg);
 }
 
+/* Configuracion grid area divs imagenes "buttons" */
 #buttons{
  margin-top: 20px;
  grid-area: buttons;
@@ -96,21 +102,19 @@ body{
  cursor:pointer;
 }
 
+/* Configuracion imagenes, para cada tamaño de panel, se definen características diferentes. */
 
 .img16{  /* PANEL 4x4 */
     width: 24%;
-    height: buttons;
     overflow: hidden;
 }
 
 .img16 img{
     max-width: 60%;
-    max-height: buttons;
     overflow:hidden;
 }
 @supports(object-fit: cover){
     .img16 img{
-      /* height: 80%; */
       object-fit: cover;
       object-position: center center;
     }
@@ -118,18 +122,15 @@ body{
 
 .img20{  /* PANEL 4x5 */
   width: 20%;
-  height: buttons;
   overflow: hidden;
 }
 
 .img20 img{
   max-width: 70%;
-  max-height: buttons;
   overflow:hidden;
 }
 @supports(object-fit: cover){
   .img20 img{
-    /* height: 80%; */
     object-fit: cover;
     object-position: center center;
   }
@@ -137,18 +138,15 @@ body{
 
 .img24{  /* PANEL 4x6 */
   width: 22%;
-  height: buttons;
   overflow: hidden;
 }
 
 .img24 img{
   max-width: 55%;
-  max-height: buttons;
   overflow:hidden;
 }
 @supports(object-fit: cover){
   .img24 img{
-    /* height: 80%; */
     object-fit: cover;
     object-position: center center;
   }
@@ -156,44 +154,39 @@ body{
 
 .img30{  /* PANEL 5x6 */
   width: 20%;
-  height: buttons;
   overflow: hidden;
 }
 
 .img30 img{
   max-width: 60%;
-  max-height: buttons;
   overflow:hidden;
 }
 @supports(object-fit: cover){
   .img30 img{
-    /* height: 80%; */
     object-fit: cover;
     object-position: center center;
   }
 }
 
-
-/* .maxScore, .lastScore{
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  margin-top: 10px;
-} */
+/* Configuracion caracteristicas titulos marcadores */
 #titleMaxScore, #titleLastScore, #titleRounds{
   font-size: 20px;
   background-color:  #334853;
 
 }
+
+/* Configuracion mensaje error */
 #msg_config{
   color: red;
 }
+
+/* Configuracion mostrar valores en los marcadores */
 #valueMaxScore, #valueLastScore, #valueRounds{
   font-size: 20px;
   margin-left: 5px;
 
 }
-
+/* Configuracion titulo principal marcadores*/
 #titleScore{
 font-size: 30px;
 margin-bottom: 5px;
@@ -201,6 +194,8 @@ background-color: #334853;
 border-bottom: 3px solid black;
 
 }
+
+/* Configuracion area notificaciones. */
 .msg_config{
   display: flex;
   flex-direction: row;
@@ -208,14 +203,16 @@ border-bottom: 3px solid black;
   margin-left: 10px;
 }
 
+/* Definimos classes*/
 .oculto{
   display: none;
 }
+
 .renew{
   width: 200px;
   height: 30px;
   color: whitesmoke;
-  border-color: 1px black;
+  border-color: black;
   border-radius: 15px;
   cursor: pointer;
   background-color:   rgb(79, 129, 131);
@@ -224,15 +221,6 @@ border-bottom: 3px solid black;
   display: flex;
   flex-direction: row;
 }
-
-/* #controls{
-  grid-area: controls;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(assets/tapete.jpg);
-} */
 
 #left{
   grid-area: left;
