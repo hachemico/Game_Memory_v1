@@ -129,6 +129,7 @@ function startTimer(){      //Configura el timmer.
       stopTimer();
       this.numPlays = 0;                        //Reiniciamos numero rondas.
       document.getElementById("valueRounds").innerHTML=" 0 rondas";
+      document.getElementById("message").innerHTML="Bienvenido a MEMORY GAME:<br><br> > Busque las parejas lo más rápido posible. <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp> El tiempo comenzará con el giro de la primera carta. <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp> En la parte inferior dispone un menú para configurar el juego. <br><br> ¡ MUCHA SUERTE !";
       this.firstGame=true;                      // habilitamos primera jugada.
       console.log("Entra reset timer");
       count = 0;
