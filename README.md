@@ -5,6 +5,8 @@
 
 Bienvenido a Game Memory, un juego desarrollado en la asignatura de cliente, correspondiente al CFGS Desarrollo Aplicaciones web.
 
+Este proyecto forma parte de una plataforma de juegos que estamos desarrollando, pasada en Mongo + Node/Express, proximamente estará disponible.
+
 Se nutre de javascript + Css para el desarrollo. 
 
 Se trata de un juego sencillo, en el que tenemos que encontrar las parejas de cada una de la imagenes que nos aparecen. Disponemos de un temporizador que nos marcará cuanto de rápidos somos resolviendo el juego.
