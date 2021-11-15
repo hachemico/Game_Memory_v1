@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='memory.css'>
+  
+</head>
+
+<body>
+  
+    <div id="title"><h1>MEMORY GAME<i class="fa fa-address-book" aria-hidden="true"></i></h1></div>
+
+  
+    <div id="scoreMarkers"> 
+      <div id="titleScore"></div>
+        <div class="maxScore">
+          <div id="titleMaxScore"></div>
+          <div id="valueMaxScore"></div>
+        </div>
+        <div class= lastScore>
+          <div id="titleLastScore"></div>
+          <div id="valueLastScore"></div>
+        </div>
+        <div class="rounds">
+          <div id="titleRounds"></div>
+          <div id="valueRounds"></div>
+        </div>
+    </div>
+   
+    
+    <div id="main">
+        <div id= "message">   
+        </div>
+
+        <div id="mainGame">
+                <div id="left">
+                    <div class="timer">
+                        <div class="time">
+                          <span id="minute">00</span>:<span id="second">00</span>
+                        </div>
+                        <svg width="300" height="300">
+                          <circle id="circle1" cx="150" cy="150" r="120"></circle>
+                          <circle id="circle2" cx="150" cy="150" r="120"></circle>
+                        </svg>
+                      </div>
+                      
+                </div>
+
+        
+                <div id="buttons"></div>
+                <div id="right"></div>
+            </div>
+      
+        
+    
+        
+    </div>  
+    
+    <div id="menu"> 
+<!-- MODAL DEL MENU -->
+
+      <div id="trigger">
+        <button id="smallbtn" data-modal="small" class="btn btn-info akela">Configuración Nivel / Tamaño Juego</button><br />
+      </div>
+
+    <div id="small" class="modal small" tabindex="-1" role="dialog">
+        <div class="modal-content">
+          <div class="modal-heading">
+            <h2 style="text-align: center;"><i class="fa fa-brain"></i> Bienvenido MEMORY GAME</h2>
+            <div class="close"><i id="close" class="fa fa-close"></i></div>
+          </div>
+          <div class="modal-body">
+            <div class="info">
+              SELECCIONA NIVEL Y TAMAÑO.<br>
+
+            </div>
+
+            <br>
+
+            <div class="config">
+              <div id="level">
+                <label>Dificultad: </label>
+                <button id="easy">Fácil</button>
+                <button id="medium">Medio</button>
+                <button id="hard">Dificil</button>
+              </div> 
+              <div id="size">
+                  <label> &nbsp  &nbsp Tamaño: </label>
+                  <button id="size1">4x4</button>
+                  <button id="size2">4x5</button>
+                  <button id="size3">4x6</button>
+                  <button id="size4">5x6</button>
+              </div>
+            </div>
+            <br>
+            <div class="msg_config">
+              <div id="msg_level"></div>
+              <div id="msg_size"></div>
+            </div>
+            <div id="msg_config"></div>
+          </div>
+          
+          <div id="modalFooter" class="modal-footer">
+            <button id="modal-close" type="button" class="btn btn-info close">START GAME</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="footer"> MEMORY GAME  Developer Hugo Micó / Nov.2021</div>
+
+</body>
+<script src='memory.js'></script>
+</html>
